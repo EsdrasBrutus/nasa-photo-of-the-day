@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import Details from './components/Details'
-import Image from './components/Image'
+import Details from './components/Details';
+import Image from './components/Image';
 import axios from 'axios';
 
 
@@ -25,9 +25,9 @@ function App() {
   return (
     <div className="App">
      <h1>Astronomy Photo Of The Day</h1>
-     {
        <Image imgData = { data } />
-     }
+     
+       <Details details = { data } />
     </div>
   );
 }
